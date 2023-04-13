@@ -1,0 +1,31 @@
+html, body {
+    min-height: 100vh;
+  }
+  
+body {
+    background-color: #E4E5E7;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-form__label {
+    display: block;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .main-form__textarea {
+    
+    width: 1250px;
+ 
+  }
+  .main-form__textarea {
+    padding: 10px 15px;
+    min-height: 100px;
+  }
+  .none {
+    display: none !important;
+  }
+  .btn-action img {
+    pointer-events: none;
+  }

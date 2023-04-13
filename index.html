@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Домашняя бухгалтерия</title>
+</head>
+<body>
+    <div class="container">
+		<div id="Archive">
+			<form>
+				<br><br>
+				<label for="date">Архив:</label>
+				<input type="month" id="date" name="date" >
+				<button id="btnArchive" type="click">Посмотреть</button>
+				<br><br>
+				<div id="archive"></div>
+			</form>
+			
+		</div>
+		<div class="display-4 mb-2">Домашняя бухгалтерия</div>
+		
+        <!-- Form -->       
+        <div class="card bg-light" >			
+			<div class="card-body">
+				<form id="form">
+					<div class="form-group">
+						<input type="text"  id="taskInput" placeholder="Укажите сумму дохода за месяц" required>
+					</div>
+					<button id="contribute" type="submit" class="btn btn-primary  btn-lg active">Рекомендуемый рассчёт</button>
+				</form>
+			</div>
+		</div>
+		<div class="card mb-4">
+			<div id="contributionsList" class="list-group list-group-flush">
+			</div>	
+		</div>
+        
+		<!-- Spendings Form -->
+		<div >
+			<form class="spendings" name="main">
+			<div class="card bg-light">
+				<div>
+					<label >Выберите месяц:</label>
+					<input type="month" id="date-change" name="date-change" required>
+				</div>
+				<div class="empty-list__title">Заполните расходы:</div>	
+				<ul id = "spendingsNew" class="list-group list-group-flush">							
+				</ul>
+				<button id = "add_category" type="click">
+					<img src="./img/pngwing.com.png" width="18" height="18">
+					Добавить новую категорию
+				</button>
+				</div>
+			<p id="total"></p>
+			<p id="itog"></p>
+			<button id ="save" type="submit" class="btn btn-primary  btn-lg active">Сохранить</button>
+			<button id ="apply" type="click" class="btn btn-primary  btn-lg active">Применить рассчет</button>
+		</form>		
+		</div>
+    <script src="js/main.js"></script>
+</body>
+</html>
